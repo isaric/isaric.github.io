@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="https://bit.ly/31IolEF" >
-  <title>Path Variable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="https://bit.ly/31IolEF">
+    <title>Path Variable</title>
 </head>
 <body>
-
-<div class="header" id="myHeader">
-  <div class="header-left">
-    <h2>&gt; path/variable</h2>
-  </div>
-  <div class="header-right">
-    <a class="button-link" href="index.html"><button>Intro</button></a>
-    <a class="button-link" href="bio.html"><button>Bio</button></a>
-    <a class="button-link" href="projects.html"><button>Projects</button></a>
-    <a class="button-link" href="contacts.html"><button>Contacts and keys</button></a>
-  </div>
+<div class="wrapper">
+    <header class="header" id="myHeader">
+        <div class="header-left">
+            <h2>&gt; path/variable</h2>
+        </div>
+        <div class="header-right">
+            <a class="button-link" href="index.html">
+                <button>Intro</button>
+            </a>
+            <a class="button-link" href="bio.html">
+                <button>Bio</button>
+            </a>
+            <a class="button-link" href="projects.html">
+                <button>Projects</button>
+            </a>
+            <a class="button-link" href="contacts.html">
+                <button>Contacts</button>
+            </a>
+        </div>
+    </header>
+    <nav id="mySidenav" class="sidenav"></nav>
+    <article class="content">
+        <h3>Projects</h3>
+        <div class="projects">
+            <ul>
+                <li>Home Automation</li>
+                <li>Smart Camera Surveillance</li>
+                <li>Natural Language Processing</li>
+            </ul>
+        </div>
+        <h3>Presentations and talks</h3>
+        <div class="talks">
+            <ul>
+                <li>
+                    <a href="https://docs.google.com/presentation/d/191VyM8vLxHu4JwVohXxt9Bb3pFCOqMOth3jGVPe5lrw/edit?usp=sharing"
+                       target="_blank"> Google Slides on Home Automation - October 2021</a></li>
+                <li><a href="https://drive.google.com/file/d/1qRlcWLuX2MF61MO9BXKrv7aO91KWlq2y/view?usp=sharing"
+                       target="_blank"> Zoom Recording of Talk on Graph Databases - November 2021</a></li>
+                <li><a href="https://bit.ly/3falVkY" target="_blank"> Google Slides on Bash-Based NVR - January 2022</a>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <aside class="side"></aside>
+    <footer class="copyright">&copy; 2021-2022 Ivan Šarić / Path Variable LLC</footer>
 </div>
-<div id="mySidenav" class="sidenav">
-</div>
-
-<div class="content wide">
-  <h3>Projects</h3>
-  <div class="projects" >
-    <ul>
-      <li>Home Automation</li>
-      <li>Smart Camera Surveillance</li>
-      <li>Natural Language Processing</li>
-    </ul>
-  </div>
-  <h3>Presentations and talks</h3>
-  <div class="talks" >
-    <ul>
-      <li><a href="https://docs.google.com/presentation/d/191VyM8vLxHu4JwVohXxt9Bb3pFCOqMOth3jGVPe5lrw/edit?usp=sharing" target="_blank"> Google Slides on Home Automation - October 2021</a></li>
-      <li><a href="https://drive.google.com/file/d/1qRlcWLuX2MF61MO9BXKrv7aO91KWlq2y/view?usp=sharing" target="_blank"> Zoom Recording of Talk on Graph Databases - November 2021</a></li>
-      <li><a href="https://bit.ly/3falVkY" target="_blank"> Google Slides on Bash-Based NVR - January 2022</a></li>
-    </ul>
-  </div>
-  <div class="copyright">&copy; 2022 Ivan Šarić / Path Variable LLC </div>
-</div>
-
 </body>
 </html>
