@@ -1,20 +1,26 @@
-.header {
-    grid-area: header;
+a:link, a:visited {
     color: green;
-    font-family: monospace;
 }
 
 body {
     background-color: black;
 }
 
-.header-left {
-    padding:2%;
+.button-link:link, visited {
+    text-decoration: none;
+    padding: 1%;
 }
 
-.header-right {
-    padding:2%;
-    min-width: 30%;
+.button-link {
+    text-overflow: ellipsis;
+}
+
+button {
+    color: green;
+    background-color: black;
+    border-color: green;
+    font-family: monospace;
+    padding: 2%;
 }
 
 .content {
@@ -27,9 +33,27 @@ body {
     padding: 1%;
 }
 
-.signature {
+.copyright {
+    grid-area: footer;
+    color: green;
+    font-family: monospace;
     text-align: right;
-    line-height: 1;
+    padding: 1%;
+}
+
+.header {
+    grid-area: header;
+    color: green;
+    font-family: monospace;
+}
+
+.header-left {
+    padding: 2%;
+}
+
+.header-right {
+    padding: 2%;
+    min-width: 30%;
 }
 
 .main-nav {
@@ -42,21 +66,23 @@ body {
     padding-left: 3%;
 }
 
+.side {
+    grid-area: aside;
+}
+
 .sidenav-item {
     float: left;
     display: none;
 }
 
-.side {
-    grid-area: aside;
+.sidenav-item > a:link, visited {
+    color: green;
+    text-decoration: none;
 }
 
-.copyright {
-    grid-area: footer;
-    color: green;
-    font-family: monospace;
+.signature {
     text-align: right;
-    padding: 1%;
+    line-height: 1;
 }
 
 .wrapper {
@@ -71,32 +97,35 @@ body {
     "footer";
 }
 
-a:link, a:visited {
-    color: green;
-}
-
-.button-link:link,visited {
-    text-decoration: none;
-    padding: 1%;
-}
-.button-link {
-    text-overflow: ellipsis;
-}
-
-button {
-    color: green;
-    background-color: black;
-    border-color: green;
-    font-family: monospace;
-    padding: 2%;
-}
-
-.sidenav-item > a:link,visited {
-    color: green;
-    text-decoration: none;
-}
-
 @media (min-width: 700px) {
+
+    .content {
+        min-height: 99vh;
+    }
+
+    .header-left {
+        float: left;
+    }
+
+    .header-right {
+        float: right;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sections {
+        display: grid;
+        position: fixed;
+    }
+
+    .sidenav-item {
+        padding: 20%;
+        display: grid;
+    }
+
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
@@ -104,30 +133,34 @@ button {
       "nav     aside"
       "footer      footer";
     }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .sections {
-        display: grid;
-        position: fixed;
-    }
-    .content{
-        min-height: 99vh;
-    }
-    .sidenav-item {
-        padding: 20%;
-        display: grid;
-    }
-    .header-left {
-        float: left;
-    }
-    .header-right {
-        float: right;
-    }
 }
 
 @media (min-width: 900px) {
+
+    .col {
+        float: left;
+        width: 33.33%;
+        text-align: justify;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .skill-title {
+        text-align: center;
+    }
+
     .wrapper {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas:
@@ -135,8 +168,5 @@ button {
       "nav    content aside"
       "nav    content aside"
       "footer footer  footer"
-    }
-    nav ul {
-        flex-direction: column;
     }
 }
