@@ -6,43 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Path Variable</title>
+    <script src="main.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <header class="header" id="myHeader">
-        <div class="header-left">
-            <h2>
-                <a href="https://www.path-variable.com" style="text-decoration: none">&gt; path/variable</a>
-            </h2>
-        </div>
-        <div class="header-right">
-            <a class="button-link" href="index.html">
-                <button>Intro</button>
-            </a>
-            <a class="button-link" href="bio.html">
-                <button>Bio</button>
-            </a>
-            <a class="button-link" href="projects.html">
-                <button>Projects</button>
-            </a>
-            <a class="button-link" href="contacts.html">
-                <button>Contacts</button>
-            </a>
-            <a class="button-link" href="https://blog.path-variable.com">
-                <button>Blog</button>
-            </a>
-        </div>
-    </header>
-    <nav id="mySidenav">
-        <div class="sections">
-            <div class="sidenav-item"><a href="#">Start</a></div>
-            <div class="sidenav-item"><a href="#jobs">Experience</a></div>
-            <div class="sidenav-item"><a href="#skls">Skills</a></div>
-            <div class="sidenav-item"><a href="#edu">Education</a></div>
-            <div class="sidenav-item"><a href="#certs">Certificates</a></div>
-            <div class="sidenav-item"><a href="#proj">Projects</a></div>
-        </div>
-    </nav>
+    <div include-template="header"></div>
+    <div include-template="nav"></div>
     <article class="content">
         <h2>Ivan Šarić</h2>
         <h2>Owner and developer @ Path Variable</h2>
@@ -264,7 +233,7 @@
         </div>
     </article>
     <aside class="side"></aside>
-    <footer class="copyright">&copy; 2021-2022 Ivan Šarić / Path Variable LLC</footer>
+    <div include-template="footer"></div>
 </div>
 
 </body>

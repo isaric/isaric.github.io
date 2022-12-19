@@ -6,7 +6,7 @@ body {
     background-color: black;
 }
 
-.button-link:link, visited {
+.button-link:link, :visited {
     text-decoration: none;
     padding: 1%;
 }
@@ -37,7 +37,7 @@ button {
     grid-area: footer;
     color: green;
     font-family: monospace;
-    text-align: right;
+    text-align: center;
     padding: 1%;
 }
 
@@ -84,7 +84,7 @@ button {
     display: none;
 }
 
-.sidenav-item > a:link, visited {
+.sidenav-item > a:link, :visited {
     color: green;
     text-decoration: none;
 }
