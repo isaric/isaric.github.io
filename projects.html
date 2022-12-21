@@ -3,13 +3,24 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <title>Path Variable</title>
-    <script src="assets/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
 <div class="wrapper">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRWXD7C5PT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DRWXD7C5PT');
+    </script>
+    <script defer src="assets/js/cookieconsent.js"></script>
+    <script defer src="assets/js/cookieconsent-init.js"></script>
     <div include-template="header"></div>
     <nav id="mySidenav" class="sidenav"></nav>
     <article class="content">
